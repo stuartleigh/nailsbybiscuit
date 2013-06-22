@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'OstrichSansMedium';
+    src: url('/static/fonts/ostrich-regular-webfont.eot');
+    src: url('/static/fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/ostrich-regular-webfont.woff') format('woff'),
+         url('/static/fonts/ostrich-regular-webfont.ttf') format('truetype'),
+         url('/static/fonts/ostrich-regular-webfont.svg#OstrichSansMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nemoymedium';
+    src: url('/static/fonts/nemoymedium-webfont.eot');
+    src: url('/static/fonts/nemoymedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/nemoymedium-webfont.woff') format('woff'),
+         url('/static/fonts/nemoymedium-webfont.ttf') format('truetype'),
+         url('/static/fonts/nemoymedium-webfont.svg#nemoymedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nemoylight';
+    src: url('/static/fonts/nemoylight-webfont.eot');
+    src: url('/static/fonts/nemoylight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/nemoylight-webfont.woff') format('woff'),
+         url('/static/fonts/nemoylight-webfont.ttf') format('truetype'),
+         url('/static/fonts/nemoylight-webfont.svg#nemoylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+	font-family: 'nemoylight', sans-serif;
+	font-weight: normal;
+}
+
+h2, h3, h4, h5 {
+	font-family: 'OstrichSansMedium', sans-serif;
+}
+
+.top-bar-section ul li > a {
+	font-family: 'OstrichSansMedium', sans-serif;
+	font-size: 1.3em;
+	margin-top: 3px;
+}
