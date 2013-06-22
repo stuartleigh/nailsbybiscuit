@@ -103,3 +103,8 @@ blockquote {
 
 .pink strong {
   color: #ec008c; }
+
+@media only screen and (max-width: 768px) {
+  #home {
+    height: 120px;
+    background-position: -130px -45px; } }
