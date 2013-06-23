@@ -14,7 +14,7 @@
       custom_back_text: true,
       back_text: 'Back',
       is_hover: true,
-      scrolltop : true, // jump to top when sticky nav menu toggle is clicked
+      scrolltop : false, // jump to top when sticky nav menu toggle is clicked
       init : false
     },
 
@@ -83,12 +83,12 @@
 
             section.find('li.moved').removeClass('moved');
             topbar.data('index', 0);
-
             topbar
               .toggleClass('expanded')
               .css('min-height', '');
           }
 
+            /*
           if (!topbar.hasClass('expanded')) {
             if (topbar.hasClass('fixed')) {
               topbar.parent().addClass('fixed');
@@ -103,7 +103,7 @@
             if (self.settings.scrolltop) {
               window.scrollTo(0,0);
             }
-          }
+          }*/
         })
 
         .on('mouseenter mouseleave', '.top-bar li', function (e) {

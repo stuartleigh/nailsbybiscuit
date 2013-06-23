@@ -108,3 +108,13 @@ blockquote {
   #home {
     height: 120px;
     background-position: -130px -45px; } }
+.top-bar .toggle-topbar.menu-icon {
+  margin-top: -19px; }
+
+.sticky-top-bar.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.top-bar .toggle-topbar.menu-icon a span {
+  right: 8px; }

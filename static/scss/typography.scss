@@ -43,8 +43,11 @@ h2, h3, h4, h5 {
 	font-family: 'OstrichSansMedium', sans-serif;
 }
 
-.top-bar-section ul li > a {
+.top-bar ul li > a {
 	font-family: 'OstrichSansMedium', sans-serif;
 	font-size: 1.3em;
-	margin-top: 3px;
+    padding: 3px 16px 0px !important;
+    line-height: 45px;
+    color: #fff;
+    display: block;
 }

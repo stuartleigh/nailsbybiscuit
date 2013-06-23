@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="/static/css/foundation.css">
 		<link rel="stylesheet" type="text/css" href="/static/css/site.css">
 		<link rel="stylesheet" type="text/css" href="/static/css/typography.css">
-		<script type="text/javascript" src="javascripts/vendor/custom.modernizr.js"></script>
+		<script type="text/javascript" src="/static/js/lib/custom.modernizr.js"></script>
 	</head>
 	<body>
 		<div id="home" data-destination="home">
@@ -17,22 +17,25 @@
 				</div>					
 			</div>
 		</div>
-		<div class="contain-to-grid sticky">
+		<div class="contain-to-grid sticky-top-bar">
 			<nav class="top-bar" data-options="is_hover:false">
+				<ul class="title-area">
+					<li data-arrival="home" class="name"><a href="#home">Home</a></li>
+					<li class="toggle-topbar menu-icon"><a href=""><span></span></a></li>
+				</ul>
 				<section class="top-bar-section">
 					<ul class="left">
-						<li data-arrival="home" class="active"><a href="#home">Home</a></li>
 						<li class="divider"></li>
 						<li data-arrival="about"><a href="#about">About</a></li>
 						<li class="divider"></li>
-						<li data-arrival="gallery"><a href="#gallery">Gallery</a></li>
+						<li data-arrival="menu"><a href="#menu">Menu</a></li>
 						<li class="divider"></li>
 						<li data-arrival="prices"><a href="#prices">Prices</a></li>
 						<li class="divider"></li>
 						<li><a href="#" data-dropdown="contact_info">Contact</a></li>
 					</ul>
 				</section>
-				<section class="top-bar-section">
+				<section class="top-bar-section hide-for-small">
 					<ul class="right">
 						<li><a href="#home">Call 07943 333 382</a></li>
 					</ul>
@@ -48,18 +51,18 @@
 		<div id="about" class="row section" data-destination="about">
 			<div class="large-8 columns">
 				<h3>About Nails by biscuit</h3>
-				<p>I'm Vickie. I drink a mental amount of tea. My home always smells like nail polish. My nickname is Biscuits (or Bear...depends who you ask). I live for all things colourful and sparkly. I am slave to glitter and studs. There is nothing that a veggie brunch can't cure.</p>
+				<p>I'm Vickie. I drink a mental amount of tea. My home always smells like nail polish. My nickname is Biscuits (or Bear...depends who you ask). I live for all things colourful and sparkly. I am a slave to glitter and studs. I truly believe there is nothing that a veggie brunch can't cure.</p>
 				<p>I am based in deepest, darkest South East London but I will travel to you, provided you don't live on Mars.</p>
-				<p>All the designs you see here can be altered to suit you. Shout me with your ideas and we'll make it work.</p>
+				<p>All the designs you see here can be altered to suit you or if you've got something already in mind, shout me your ideas and we'll make it work.</p>
 			</div>
 			<div class="large-4 columns">
 				<img src="/static/images/photo.jpg">
 			</div>
 		</div>
 		<div class="separator"></div>
-		<div id="gallery" class="row section" data-destination="gallery">
+		<div id="menu" class="row section" data-destination="menu">
 			<div class="large-12 columns">
-				<h3>Gallery of Nails</h3>
+				<h3>Nail art menu</h3>
 				<ul class="small-block-grid-3 large-block-grid-6">
 					<li class="nail_icon"><img src="/static/images/nail_icons/nail_strawberry.png"><br />Strawberry</li>
 					<li class="nail_icon"><img src="/static/images/nail_icons/nail_gradient.png"><br />Gradient</li>
@@ -86,7 +89,7 @@
 		<div id="prices" class="section" data-destination="prices">
 			<div class="row">
 				<div class="large-12 columns">
-					<h3>Prices for Nails by biscuit</h3>
+					<h3>Price list</h3>
 				</div>
 			</div>
 			<div class="row">
@@ -120,10 +123,10 @@
 		</div>
 		<script type="text/javascript" src="/static/js/lib/jquery.js"></script>
 		<script type="text/javascript" src="/static/js/lib/foundation/foundation.js"></script>
-		<script type="text/javascript" src="/static/js/lib/foundation/foundation.topbar.js"></script>
 		<script type="text/javascript" src="/static/js/lib/foundation/foundation.orbit.js"></script>
 		<script type="text/javascript" src="/static/js/lib/foundation/foundation.dropdown.js"></script>
 		<script type="text/javascript" src="/static/js/whereami.js"></script>
+		<script type="text/javascript" src="/static/js/topbar.js"></script>
 		<script>
 			$(document).foundation();
 		</script>
