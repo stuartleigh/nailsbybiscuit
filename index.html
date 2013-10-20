@@ -14,7 +14,7 @@
 			<div class="row">
 				<div class="large-12 columns">
 					<h1 id="logo">Nails by Biscuit</h1>
-				</div>					
+				</div>
 			</div>
 		</div>
 		<div class="contain-to-grid sticky-top-bar">
@@ -82,7 +82,7 @@
 					<li class="nail_icon"><img src="/static/images/nail_icons/nail_panda.png"><br />Panda</li>
 					<li class="nail_icon"><img src="/static/images/nail_icons/nail_heart.png"><br />Love heart</li>
 					<li class="nail_icon"><img src="/static/images/nail_icons/nail_rose.png"><br />Roses</li>
-				</ul>	
+				</ul>
 			</div>
 		</div>
 		<div class="separator"></div>
@@ -118,7 +118,18 @@
 				<dt>Phone:</dt>
 					<dd>07943 333 382</dd>
 				<dt>Email:</dt>
-					<dd>vickie@nailsbybiscuit.co.uk</dd>
+					<dd>
+						<form id="myForm" action="http://www.formd.io/api/v0/message/" method="POST">
+							<input name="token" type="hidden" value="523ee97caef64a05aab3f830cb211e53" />
+							<label for="#id_name">name</label>
+							<input name="name" id="id_name" type="text" />
+							<label for="#id_email">email</label>
+							<input name="email" id="id_email" type="text" />
+							<label for="#id_message">message</label>
+							<textarea name="message" id="id_message"></textarea>
+							<input type="submit" value="Submit message" class="button small" />
+						</form>
+					</dd>
 			</dl>
 		</div>
 		<script type="text/javascript" src="/static/js/lib/jquery.js"></script>
@@ -129,6 +140,26 @@
 		<script type="text/javascript" src="/static/js/topbar.js"></script>
 		<script>
 			$(document).foundation();
+			$(document).ready(function(){
+				$('#myForm').on('submit', function(event){
+                    event.preventDefault();
+                    var form = $(event.target);
+                    $.ajax({
+                        url: form.attr('action'),
+                        type: form.attr('method'),
+                        data: form.serialize(),
+                        beforeSend: function(jqXHR, settings) {
+                            jqXHR.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                        },
+                        success: function(result) {
+                            console.log(result);
+                        },
+                        error: function(result) {
+                            console.log(result);
+                        }
+                    });
+                });
+			});
 		</script>
 	</body>
 </html>
